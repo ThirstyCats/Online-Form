@@ -1,0 +1,210 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: Merriweather;
+}
+
+p,
+input[placeholder] {
+  color: #acacac;
+}
+
+.center {
+  text-align: center;
+}
+
+.title {
+  background-color: #2D3945;
+  color: white;
+  padding: 20px;
+  margin: 0;
+}
+
+.tag {
+  margin: 20px 0;
+}
+
+.border {
+  border-top: 4px solid #2D3945;
+  border-bottom: 2px solid #2D3945;
+  padding: 2px;
+}
+
+form {
+  background-color: rgba(113, 108, 117, 0.23);
+  padding: 0 10px;
+  border-bottom: 2px solid #2D3945;
+}
+
+form,
+.top {
+  width: 90%;
+  margin: auto;
+}
+
+.bottom {
+  border-top: none;
+}
+
+.field {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+}
+
+.heading {
+  font-size: 1.3em;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+.box {
+  background: #F1F1F1;
+  border-radius: 5px;
+  border: none;
+}
+
+.input {
+  padding: 15px 0;
+  margin: 20px 0;
+}
+
+.zip {
+  align-self: flex-start;
+}
+
+input[placeholder],
+.copy {
+  font-style: italic;
+}
+
+input[placeholder] {
+  text-align: right;
+  padding-right: 20px;
+}
+
+select:invalid {
+color: #acacac;
+}
+
+option[value=””][disabled] {
+display: none;
+}
+
+option,
+.describe {
+color: #000;
+}
+
+.describe {
+  margin-bottom: 10px;
+}
+
+input[type=checkbox],
+input[type=radio] {
+  margin-bottom: 10px;
+}
+
+input[id=java],
+input[id=plain] {
+  margin-bottom: 20px;
+}
+
+input,
+select,
+textarea {
+  transition: border 300ms ease-in-out;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border: 2px solid #2D3945
+}
+
+textarea {
+  height: 100px;
+  margin: 20px 0;
+  padding: 10px;
+  line-height: 1.5;
+}
+
+.btn {
+  padding: 20px 0;
+  color: white;
+  background-color: #8CCFC2;
+}
+
+footer {
+  padding: 20px ;
+}
+
+@media (min-width: 768px) {
+
+  main,
+  footer,
+  .border {
+    max-width: 786px;
+    margin: auto;
+  }
+
+  .tag {
+    margin: 60px 0;
+  }
+
+  .heading {
+    margin-top: 30px;
+  }
+
+  .border,
+  form {
+    width: 100%;
+  }
+
+  .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  form {
+    padding: 0 10px;
+  }
+
+  .input {
+    width: 80%;
+  }
+
+  .zip {
+    width: 20%;
+  }
+
+  label {
+    width: 20%;
+    align-self: center;
+  }
+
+  label,
+  .describe {
+    color: #000;
+  }
+
+  input[type=checkbox],
+  input[type=radio] {
+    margin-bottom: 20px;
+  }
+
+  .describe {
+    margin: 20px 0;
+  }
+
+  .col {
+    display: flex;
+    flex-direction: column;
+  }
+
+}
