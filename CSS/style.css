@@ -92,7 +92,7 @@ select:invalid {
 color: #acacac;
 }
 
-option[value=””][disabled] {
+option[disabled] {
 display: none;
 }
 
